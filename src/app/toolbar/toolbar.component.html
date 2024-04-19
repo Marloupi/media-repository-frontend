@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+    <!-- YouTube logo or app name -->
+    <span class="logo">Media Repository</span>
+  
+    <!-- Navigation links -->
+    <span class="nav-links">
+      <a routerLink="/home">Home</a>
+      <a routerLink="/trending">Trending</a>
+     </span>
+  
+    <!-- User profile icon (optional) -->
+    <span class="user-profile" [matMenuTriggerFor]="userMenu">
+        <mat-icon>account_circle</mat-icon>
+      </span>
+  </mat-toolbar>
+
+<mat-menu #userMenu="matMenu">
+    <button mat-menu-item>Profile</button>
+    <button mat-menu-item>Settings</button>
+    <button mat-menu-item>Logout</button>
+  </mat-menu>
